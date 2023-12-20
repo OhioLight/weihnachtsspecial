@@ -18,4 +18,24 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-  - assets/images/bauble.png
+  - assets/illustrations/ bauble.png 
+  - assets/illustrations/branch_BG.png
+  - assets/illustrations/candy_BG.png
+  - assets/illustrations/cup_cake.png
+  - assets/illustrations/gift.png
+  - assets/illustrations/gingerbread_man.png
+  - assets/illustrations/glove.png
+  - assets/illustrations/house.png
+  - assets/illustrations/kai.png
+  - assets/illustrations/mince_pig.png
+  - assets/illustrations/party.png
+  - assets/illustrations/santa.png
+  - assets/illustrations/sleigh.png
+  - assets/illustrations/snowball.png
+  - assets/illustrations/stars.png
+  - assets/illustrations/yule_cake.png
+
+ - family: SF
+    fonts:
+      - asset: assets/fonts/SF-Pro-Display-Black.ttf
+      - asset: assets/fonts/SF-Pro-Display-BlackItalic.ttf
