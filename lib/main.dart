@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:weihnachtsspecial/widgets/drawer_button.dart';
+import 'package:weihnachtsspecial/widgets/drawer_text.dart';
+import 'package:weihnachtsspecial/widgets/list_view_drawer.dart';
 
 void main() {
   runApp(const MainApp());
@@ -11,49 +14,26 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        backgroundColor: const Color.fromARGB(255, 244, 250, 255),
         drawer: SafeArea(
           child: Drawer(
-            width: MediaQuery.of(context).size.width - 60,
-            child: Stack(
-              children: [
-                Positioned.fill(
-                  child: Image.asset(
-                    'assets/illustrations/candy_BG.png',
-                    fit: BoxFit.cover,
-                  ),
+              backgroundColor: const Color.fromARGB(255, 244, 250, 255),
+              elevation: 5,
+              width: MediaQuery.of(context).size.width - 60,
+              child: Container(
+                decoration: const BoxDecoration(
+                  image: DecorationImage(
+                      fit: BoxFit.cover,
+                      image: AssetImage(
+                        'assets/illustrations/candy_BG.png',
+                      )),
                 ),
-                const Padding(
-                  padding: EdgeInsets.fromLTRB(20, 20, 0, 50),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      ClipOval(
-                        child: SizedBox(
-                          width: 50,
-                          height: 50,
-                          child: Image(
-                            image: AssetImage('assets/illustrations/kai.png'),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-          ),
+                child: const ListViewDraw(),
+              )),
         ),
-        body: Stack(
-          children: [
-            Positioned.fill(
-              child: Image.asset(
-                'assets/illustrations/branch_BG.png',
-                fit: BoxFit.cover,
-              ),
-            ),
-          ],
-        ),
+        body: 
       ),
-    );
+      );
+    
   }
 }
