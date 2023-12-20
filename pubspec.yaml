@@ -27,7 +27,7 @@ flutter:
   - assets/illustrations/glove.png
   - assets/illustrations/house.png
   - assets/illustrations/kai.png
-  - assets/illustrations/mince_pig.png
+  - assets/illustrations/mince_pie.png
   - assets/illustrations/party.png
   - assets/illustrations/santa.png
   - assets/illustrations/sleigh.png
@@ -35,7 +35,8 @@ flutter:
   - assets/illustrations/stars.png
   - assets/illustrations/yule_cake.png
 
- - family: SF
-    fonts:
+fonts:
+    - family: SF
+      fonts:
       - asset: assets/fonts/SF-Pro-Display-Black.ttf
       - asset: assets/fonts/SF-Pro-Display-BlackItalic.ttf
