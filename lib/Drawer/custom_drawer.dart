@@ -32,7 +32,7 @@ class CustomDrawer extends StatelessWidget {
             child: Container(
               decoration: const BoxDecoration(
                 image: DecorationImage(
-                  fit: BoxFit.cover,
+                  fit: BoxFit.fill,
                   image: AssetImage(
                     'assets/illustrations/candy_BG.png',
                   ),

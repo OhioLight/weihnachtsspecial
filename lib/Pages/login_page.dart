@@ -11,14 +11,15 @@ class LoginPage extends StatelessWidget {
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
-            fit: BoxFit.cover,
+            fit: BoxFit.fill,
             image: AssetImage(
               'assets/illustrations/branch_BG.png',
             ),
           ),
         ),
-        child: SafeArea(
-          child: Center(
+        child: Center(
+          child: SingleChildScrollView(
+            physics: const NeverScrollableScrollPhysics(),
             child: Column(
               children: [
                 const SizedBox(
@@ -54,10 +55,10 @@ class LoginPage extends StatelessWidget {
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(15)),
                   child: const Padding(
-                    padding: EdgeInsets.all(8.0),
+                    padding: EdgeInsets.only(left: 8.0),
                     child: TextField(
                       decoration: InputDecoration(
-                        label: Text('E-mail Adresse'),
+                        hintText: 'E-mail Adresse',
                         enabledBorder: InputBorder.none,
                       ),
                     ),
@@ -73,10 +74,10 @@ class LoginPage extends StatelessWidget {
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(15)),
                   child: const Padding(
-                    padding: EdgeInsets.all(8.0),
+                    padding: EdgeInsets.only(left: 8.0),
                     child: TextField(
                       decoration: InputDecoration(
-                        label: Text('Passwort'),
+                        hintText: 'Passwort',
                         enabledBorder: InputBorder.none,
                       ),
                     ),
