@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:weihnachtsspecial/widgets/drawer_button.dart';
-import 'package:weihnachtsspecial/widgets/drawer_text.dart';
+import 'package:weihnachtsspecial/Drawer/widgets/drawer_button.dart';
+import 'package:weihnachtsspecial/Drawer/widgets/drawer_text.dart';
 
 class ListViewDraw extends StatelessWidget {
   const ListViewDraw({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
-      children: const [
+    return const Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
         SizedBox(
           height: 15,
         ),
@@ -21,8 +22,8 @@ class ListViewDraw extends StatelessWidget {
         ListTile(
           contentPadding: EdgeInsets.fromLTRB(0, 20, 0, 0),
           title: DrawerBtn(
-            color1: Color.fromARGB(255, 158, 165, 194),
-            color2: Color.fromARGB(255, 60, 86, 148),
+            color1: Color.fromARGB(255, 173, 203, 230),
+            color2: Color.fromARGB(255, 30, 77, 120),
             buttontext: 'Home',
             buttonimage: 'assets/illustrations/house.png',
           ),
@@ -30,32 +31,30 @@ class ListViewDraw extends StatelessWidget {
         ListTile(
             contentPadding: EdgeInsets.fromLTRB(0, 20, 0, 0),
             title: DrawerBtn(
-              color1: Color.fromARGB(255, 134, 200, 146),
-              color2: Color.fromARGB(255, 54, 138, 73),
+              color1: Color.fromARGB(255, 140, 206, 177),
+              color2: Color.fromARGB(255, 13, 137, 93),
               buttontext: 'Gifts',
               buttonimage: 'assets/illustrations/gift.png',
             )),
         ListTile(
             contentPadding: EdgeInsets.fromLTRB(0, 20, 0, 0),
             title: DrawerBtn(
-              color1: Color.fromARGB(255, 207, 139, 139),
-              color2: Color.fromARGB(255, 125, 5, 5),
+              color1: Color.fromARGB(255, 255, 148, 142),
+              color2: Color.fromARGB(255, 159, 5, 21),
               buttontext: 'Home',
               buttonimage: 'assets/illustrations/stars.png',
             )),
         ListTile(
             contentPadding: EdgeInsets.fromLTRB(0, 20, 0, 0),
             title: DrawerBtn(
-              color1: Color.fromARGB(255, 240, 211, 66),
-              color2: Color.fromARGB(255, 252, 138, 0),
+              color1: Color.fromARGB(255, 250, 214, 74),
+              color2: Color.fromARGB(255, 234, 136, 15),
               buttontext: 'Home',
               buttonimage: 'assets/illustrations/ bauble.png',
             )),
-        SizedBox(
-          height: 300,
-        ),
+        Spacer(),
         Padding(
-          padding: EdgeInsets.all(20.0),
+          padding: EdgeInsets.fromLTRB(25, 0, 0, 20),
           child: Text(
             'Log out',
             style: TextStyle(

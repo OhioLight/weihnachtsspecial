@@ -18,26 +18,23 @@ class BtnBackView extends StatelessWidget {
         Center(
           child: Container(
             width: 320,
-            height: 120,
+            height: 140,
             decoration: BoxDecoration(
-                image: DecorationImage(
-                  alignment: Alignment.bottomRight,
-                  image: AssetImage(image1),
-                ),
-                borderRadius: BorderRadius.circular(40),
-                gradient: const LinearGradient(
-                  colors: [
-                    Color.fromARGB(255, 120, 181, 158),
-                    Color.fromARGB(255, 59, 121, 89)
-                  ],
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                )),
+              borderRadius: BorderRadius.circular(40),
+              gradient: const LinearGradient(
+                colors: [
+                  Color.fromARGB(255, 140, 206, 177),
+                  Color.fromARGB(255, 13, 137, 93),
+                ],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+              ),
+            ),
           ),
         ),
         Positioned(
-          top: 10,
-          left: 40,
+          top: 20,
+          left: 30,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -54,11 +51,23 @@ class BtnBackView extends StatelessWidget {
                 style: const TextStyle(
                     height: 1.1,
                     fontFamily: 'SF',
-                    fontSize: 28,
+                    fontSize: 26,
                     fontWeight: FontWeight.bold,
                     color: Colors.white),
-              )
+              ),
             ],
+          ),
+        ),
+        Container(
+          width: 320,
+          height: 140,
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              scale: 0.5,
+              alignment: Alignment.bottomRight,
+              image: AssetImage(image1),
+            ),
+            borderRadius: BorderRadius.circular(40),
           ),
         ),
       ],

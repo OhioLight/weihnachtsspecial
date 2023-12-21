@@ -23,20 +23,29 @@ class BtnFrontView extends StatelessWidget {
               width: 280,
               height: 280,
               decoration: BoxDecoration(
-                  image: DecorationImage(
-                    fit: BoxFit.fill,
-                    alignment: Alignment.bottomRight,
-                    image: AssetImage(image1),
+                image: DecorationImage(
+                  fit: BoxFit.fill,
+                  alignment: Alignment.bottomRight,
+                  image: AssetImage(image1),
+                ),
+                borderRadius: BorderRadius.circular(45),
+                gradient: const LinearGradient(
+                  colors: [
+                    Color.fromARGB(255, 173, 203, 230),
+                    Color.fromARGB(255, 30, 77, 120)
+                  ],
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                ),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withOpacity(0.2),
+                    spreadRadius: 5,
+                    blurRadius: 15,
+                    offset: const Offset(5, 10),
                   ),
-                  borderRadius: BorderRadius.circular(45),
-                  gradient: const LinearGradient(
-                    colors: [
-                      Color.fromARGB(255, 148, 174, 204),
-                      Color.fromARGB(255, 46, 73, 112)
-                    ],
-                    begin: Alignment.topLeft,
-                    end: Alignment.bottomRight,
-                  )),
+                ],
+              ),
             ),
           ),
         ),
