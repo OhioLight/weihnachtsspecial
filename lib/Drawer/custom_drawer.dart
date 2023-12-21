@@ -11,13 +11,14 @@ class CustomDrawer extends StatelessWidget {
     return Stack(
       children: [
         BackdropFilter(
-            filter: ImageFilter.blur(
-              sigmaX: 7.0,
-              sigmaY: 7.0,
-            ),
-            child: Container(
-              color: const Color.fromARGB(255, 255, 154, 147).withOpacity(0.3),
-            )),
+          filter: ImageFilter.blur(
+            sigmaX: 7.0,
+            sigmaY: 7.0,
+          ),
+          child: Container(
+            color: const Color.fromARGB(255, 255, 154, 147).withOpacity(0.3),
+          ),
+        ),
         Padding(
           padding: const EdgeInsets.only(top: 60),
           child: Drawer(

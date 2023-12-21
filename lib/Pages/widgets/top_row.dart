@@ -27,8 +27,8 @@ class TopRow extends StatelessWidget {
               ),
             ], color: Colors.white, borderRadius: BorderRadius.circular(15)),
             child: const TextField(
-                textAlignVertical: TextAlignVertical.bottom,
                 decoration: InputDecoration(
+                    contentPadding: EdgeInsets.symmetric(vertical: 4.0),
                     hintText: 'Search',
                     prefixIcon: Icon(Icons.search),
                     border: InputBorder.none)),

@@ -41,7 +41,7 @@ class ListViewDraw extends StatelessWidget {
             title: DrawerBtn(
               color1: Color.fromARGB(255, 255, 148, 142),
               color2: Color.fromARGB(255, 159, 5, 21),
-              buttontext: 'Home',
+              buttontext: 'Order',
               buttonimage: 'assets/illustrations/stars.png',
             )),
         ListTile(
@@ -49,7 +49,7 @@ class ListViewDraw extends StatelessWidget {
             title: DrawerBtn(
               color1: Color.fromARGB(255, 250, 214, 74),
               color2: Color.fromARGB(255, 234, 136, 15),
-              buttontext: 'Home',
+              buttontext: 'Settings',
               buttonimage: 'assets/illustrations/ bauble.png',
             )),
         Spacer(),
