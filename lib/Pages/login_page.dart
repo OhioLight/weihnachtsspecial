@@ -19,7 +19,6 @@ class LoginPage extends StatelessWidget {
         ),
         child: Center(
           child: SingleChildScrollView(
-            physics: const NeverScrollableScrollPhysics(),
             child: Column(
               children: [
                 const SizedBox(
