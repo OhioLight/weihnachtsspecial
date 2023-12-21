@@ -31,8 +31,8 @@ class BtnFrontView extends StatelessWidget {
                   borderRadius: BorderRadius.circular(45),
                   gradient: const LinearGradient(
                     colors: [
-                      Color.fromARGB(255, 158, 165, 194),
-                      Color.fromARGB(255, 75, 103, 168)
+                      Color.fromARGB(255, 148, 174, 204),
+                      Color.fromARGB(255, 46, 73, 112)
                     ],
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
