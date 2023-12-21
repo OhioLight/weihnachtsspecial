@@ -34,6 +34,7 @@ flutter:
   - assets/illustrations/snowball.png
   - assets/illustrations/stars.png
   - assets/illustrations/yule_cake.png
+  - assets/illustrations/mini_star.png
 
 fonts:
     - family: SF
