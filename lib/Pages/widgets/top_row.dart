@@ -8,12 +8,12 @@ class TopRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 25.0),
+      padding: const EdgeInsets.only(left: 25.0, right: 15),
       child: Row(
         children: [
           const FavIconBtn(),
           const SizedBox(
-            width: 20,
+            width: 10,
           ),
           Container(
             width: 200,
@@ -33,20 +33,28 @@ class TopRow extends StatelessWidget {
                     prefixIcon: Icon(Icons.search),
                     border: InputBorder.none)),
           ),
-          const SizedBox(width: 15),
-          const NotifIconBtn(),
           const SizedBox(
-            width: 10,
+            width: 5,
           ),
-          const ClipOval(
-            child: SizedBox(
-              width: 40,
-              height: 40,
-              child: Image(
-                image: AssetImage('assets/illustrations/kai.png'),
+          const Expanded(
+              child: Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              NotifIconBtn(),
+              SizedBox(
+                width: 4,
               ),
-            ),
-          ),
+              ClipOval(
+                child: SizedBox(
+                  width: 40,
+                  height: 40,
+                  child: Image(
+                    image: AssetImage('assets/illustrations/kai.png'),
+                  ),
+                ),
+              ),
+            ],
+          ))
         ],
       ),
     );
